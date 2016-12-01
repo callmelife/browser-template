@@ -13,3 +13,8 @@ require('./assets/styles/index.scss');
 // attach jQuery globally
 require('expose?$!jquery');
 require('expose?jQuery!jquery');
+
+// attach getFormFields globally
+
+// Do I need this line? Was in the api-token-auth repo master branch
+require('expose?getFormFields!./lib/get-form-fields.js');

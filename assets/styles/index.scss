@@ -1,2 +1,221 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+$maroon: #800000;
+$grey: #808080;
+$black: #000;
+$white: #FFF;
+$gold: #D5B700;
+$royal-purple: #622A6C;
+$sky-blue: #5792F8;
+
+
+body {
+  background-color: $grey;
+  width: auto;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 48px;
+  font-style: italic;
+  font-family: cursive;
+  padding-top: 25px;
+  padding-bottom: 25px;
+};
+
+.get-pictures-button-container {
+  padding-left: 45%;
+
+};
+
+.img {
+  width: 500px;
+  height: 500px;
+
+}
+
+// This code pertains to the elements concerned with the graffiti
+// (i.e. divs, information, the picture).
+.graffiti-main {
+  background-color: $black;
+  border: 10px solid $maroon;
+  color: $white;
+  display: flex;
+  height: 1280px;
+  // margin-left: 20%;
+  margin-top: 1.5%;
+  width: auto;
+
+}
+
+.graffiti-one-container,
+.graffiti-two-container {
+  background-color: $grey;
+  border: 10px solid $maroon;
+  height: auto;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  width: 40%;
+}
+
+.graffiti-one-info,
+.graffiti-two-info {
+  border: 4px solid $royal-purple;
+  background-color: $royal-purple;
+  height: 45%;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 90%;
+}
+
+.graffiti-one-img-container,
+.graffiti-two-img-container {
+  background-color: $gold;
+  border: 2px solid $gold;
+  height: 40%;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 90%;
+}
+
+// This code pertains to the divs that will be auto populated with
+// information about the art piece.
+.col-md-4 {
+  background-color: $grey;
+  border: 2px solid $grey;
+  border-radius: 10%;
+  font-size: 14px;
+  height: 100px;
+  margin-left: 7.5%;
+  margin-top: 5%;
+  padding-top: 25px;
+  text-align: center;
+  width: auto;
+  color: $white;
+  text-overflow: ellipsis;
+}
+
+.col-md-12 {
+  background-color: $grey;
+  border: 2px solid $grey;
+  border-radius: 5%;
+  font-size: 14px;
+  margin-left: 5%;
+  margin-top: 5%;
+  height: 100%;
+  padding-top: 20px;
+  text-align: center;
+  width: 90%;
+  // padding-bottom: 20px;
+  // margin-bottom: 20px;
+}
+
+// This code pertains to the button that users will use to select which
+// piece of art they perfer (i.e. the battle). A favorite button.
+
+.graffiti-one-btn-container {
+  display: flex;
+}
+
+#favorite-btn-one {
+  // display: inline;
+  padding-left: 45%;
+  padding-top: 5%;
+  color: $black;
+  height: 100px;
+  width: 100px;
+}
+
+.graffiti-one-favorite-btn,
+.graffiti-two-favorite-btn {
+  color: $black;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  margin-left: 33%;
+  margin-top: 5%;
+}
+
+.favorite-btn-container {
+  // display: flex;
+}
+
+// Code below is for a back up / reach ( if I can get the battle part down)
+// Its for the option to scroll through either a gallery of individual pictures,
+// or it could be used to scroll through picture pairs (i.e. pairs to battle)
+// at a time.
+
+#graffiti-one-previous-btn {
+  display: inline;
+  padding-left: 5%;
+  padding-top: 5%;
+  height: 100px;
+  width: 100px;
+  color: black;
+  font-size: 20px;
+}
+
+#graffiti-one-next-btn {
+  display: inline;
+  padding-left: 80%;
+  padding-top: 5%;
+  height: 100px;
+  width: 100px;
+  color: black;
+  font-size: 20px;
+}
+
+// Code below is concerned with all auth info
+.auth-instructions {
+  color: $white;
+  font-size: 20px;
+  text-align: center;
+}
+
+#sign-up {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: $maroon;
+  font-size: 24px;
+  border-radius: 5%;
+  border: 1px solid $maroon;
+}
+
+#sign-in {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: $maroon;
+  font-size: 24px;
+  border-radius: 5%;
+  border: 1px solid $maroon;
+}
+
+#change-password {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: $maroon;
+  font-size: 24px;
+  border-radius: 5%;
+  border: 1px solid $maroon;
+}
+
+#sign-out {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: $maroon;
+  font-size: 24px;
+  border-radius: 5%;
+  border: 1px solid $maroon;
+  color: white;
+}

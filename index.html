@@ -2,21 +2,168 @@
 <html>
     <head>
       <title>Example</title>
-
+<!-- Not really sure what the line below does, should ask-->
       <meta name="viewport" content="width=device-width, initial-scale=1">
-
       <script src="dependencies.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
-    <body class="container-fluid">
-      <h1>Example</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
+    <body class="container-fluid">
+
+<!-- code will contain form to upload images -->
+
+<div class="upload-image-container">
+  <div class="upload-image-form-container">
+    <form>
+      <fieldset>
+        Title: <input type="text" name="pic-title" placeholder="Name of piece"><br>
+        Artist: <input type="text" name="pic-artist" placeholder="Artist's Name"><br>
+        Description: <input type="text" name="pic-description" placeholder="Description of piece"><br>
+        Location: <input type="text" name="pic-location" placeholder="Location of piece"><br>
+        Date Photographed: <input type="date" name="pic-date"><br>
+        URL: <input type="text" name="pic-url" placeholder="URL to image"><br>
+      </fieldset>
+    </form>
+  </div>
+  <div class="upload-image-btn-container">
+    <input type="submit" class="upload-picture-btn" name="upload-btn" value="Click Here to Post Your Favorite Graffiti picture and information!">
+  </div>
+</div>
+
+
+
+<!-- This code is concerned with loading image on click -->
+      <div class="intro-text">Ready To Play Graffiti Gladiator?</div>
+      <div class="get-pictures-button-container">
+        <form id="get-picture-form">
+          <input type="submit" class="get-picture-button" name="pictures-button" value="Click Here To Get Your Pictures">
+          <div class="get-picture-display"></div>
+        </form>
+      </div>
+
+<!-- This div will contain all code relevant to the graffiti game -->
+      <div class="graffiti-main">
+
+<!-- This div contains all code relevant to img one-->
+      <div class="graffiti-one-container">
+          <div class="graffiti-one-img-container">
+            <a href="#">
+              <img src="#" alt="Image to be linked to" class="graffiti-one-img">
+            </a>
+          </div>
+<!-- This div contains all code relevant to img one's info-->
+          <div class="graffiti-one-info">
+             <div class="row">
+               <div class="col-md-4 tag-name-container"><p>Tag Name:</p></div>
+               <div class="col-md-4 artist-name-container">Artist:</div>
+               <div class="col-md-4 location-container">Location:</div>
+               <div class="col-md-4 date-container">Date Photographed:</div>
+               <div class="col-md-4 url-container">URL:</div>
+             </div>
+             <div class="row">
+               <div class="col-md-12 description-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+             </div>
+          </div>
+          <div class="favorite-btn-container">
+            <form action="">
+              <input type="submit" class="graffiti-one-favorite-btn" name="graffiti-one-favorite-btn" value="This One Is Me">
+            </form>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- This div contains all code relevant to img two-->
+        <div class="graffiti-two-container">
+          <div class="graffiti-two-img-container">
+            <a href="#">
+              <img src="#" alt="Image to be linked to" class="graffiti-two-img">
+            </a>
+          </div>
+<!-- This div contains all code relevant to img two's info-->
+          <div class="graffiti-two-info">
+             <div class="row">
+               <div class="col-md-4 tag-name-container">Tag Name:</div>
+               <div class="col-md-4 artist-name-container">Artist:</div>
+               <div class="col-md-4 location-container">Location:</div>
+               <div class="col-md-4 date-container">Date Photographed:</div>
+             </div>
+             <div class="row">
+               <div class="col-md-12 description-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+             </div>
+          </div>
+          <div class="favorite-btn-container">
+            <form action="">
+              <input type="submit" class="graffiti-two-favorite-btn" name="graffiti-two-favorite-btn" value="This One Is Me">
+            </form>
+          </div>
+        </div>
+      </div>
+
+<!-- This div contains all code relevant to the controller buttons.
+These buttons will bring a new set of images to compare-->
+        <div class="graffiti-one-btn-container">
+          <form id="graffiti-one-previous-btn" action="">
+            <fieldset>
+                <input type="submit" name="submit-previous" value="Previous Image">
+            </fieldset>
+          </form>
+          <form id="graffiti-one-next-btn" action="">
+            <fieldset>
+                <input type="submit" name="submit-next" value="Next Image">
+            </fieldset>
+          </form>
+        </div>
+
+
+
+<!-- This code is relevant to the user auth (sign up / in / out & change password)-->
+      <div class="user-auth">
+        <form id="sign-up">
+          <fieldset>
+            <div class='auth-instructions'>Sign Up Below!</div>
+            <input type="text" name="credentials[email]" value="" placeholder="Email">
+            <input type="password" name="credentials[password]" value="" placeholder="Password">
+            <input type="password" name="credentials[password_confirmation]" value="" placeholder="Confirm Password">
+            <input type="submit" name="submit" value="Sign up!">
+            <div class="sign-up-display"></div>
+          </fieldset>
+        </form>
+        <form id="sign-in">
+          <fieldset>
+            <div class='auth-instructions'>Sign In Below!</div>
+            <input type="text" name="credentials[email]" value="" placeholder="Email">
+            <input type="password" name="credentials[password]" value="" placeholder="Password">
+            <input type="submit" name="submit" value="Sign in!">
+            <div class="sign-in-display"></div>
+          </fieldset>
+        </form>
+        <form id="sign-out">
+          <fieldset>
+            <div class='auth-instructions'>Sign Out Below!</div>
+            <input type="submit" name="submit" value="Sign out!">
+            <div class="sign-out-display"></div>
+          </fieldset>
+        </form>
+        <form id="change-password">
+          <fieldset>
+            <div class='auth-instructions'>Change Password Below!</div>
+            <input type="password" name="passwords[old]" value="" placeholder="Old Password">
+            <input type="password" name="passwords[new]" value="" placeholder="New Password">
+            <input type="submit" name="submit" value="Change Password">
+            <div class="change-password-display"></div>
+          </fieldset>
+        </form>
+      </div>
+
     </body>
 </html>
